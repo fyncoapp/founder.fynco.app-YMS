@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #F9FAFB;
+  --color-foreground: #12191A;
+  --color-card: #FEFEFE;
+  --color-card-foreground: #12191A;
+  --color-popover: #FEFEFE;
+  --color-popover-foreground: #12191A;
+  --color-primary: #143A43;
+  --color-primary-foreground: #FEFEFE;
+  --color-secondary: #E9ECEF;
+  --color-secondary-foreground: #12191A;
+  --color-muted: #E9ECEF;
+  --color-muted-foreground: #59696C;
+  --color-accent: #95A8AE;
+  --color-accent-foreground: #12191A;
+  --color-destructive: #d4183d;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e5e7e8;
+  --color-input: transparent;
+  --color-input-background: #FEFEFE;
+  --color-ring: #143A43;
+  --color-chart-1: #143A43;
+  --color-chart-2: #34565D;
+  --color-chart-3: #95A8AE;
+  --color-chart-4: #59696C;
+  --color-chart-5: #E9ECEF;
+  --color-sidebar: #FEFEFE;
+  --color-sidebar-foreground: #12191A;
+  --color-sidebar-primary: #143A43;
+  --color-sidebar-primary-foreground: #FEFEFE;
+  --color-sidebar-accent: #E9ECEF;
+  --color-sidebar-accent-foreground: #12191A;
+  --color-sidebar-border: #f0f2f2;
+  --color-sidebar-ring: #143A43;
+  --color-success: #10B981;
+  --color-success-foreground: #FEFEFE;
+  --color-warning: #F7931A;
+  --color-warning-foreground: #FEFEFE;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+  }
+}
+
+.glass-card {
+  background: rgba(254, 254, 254, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(18, 25, 26, 0.06);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
